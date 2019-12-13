@@ -1,4 +1,8 @@
 function generatePassword(passwordLength) {
+    if (passwordLength < 8 || passwordLength > 128) {
+        throw new Error('Password length must be greater than or equal to 8 and less than or equal to 128');
+    }
+
     var charSet = "abcdefghij";
     var generatedPassword = "";
 
@@ -10,6 +14,4 @@ function generatePassword(passwordLength) {
     return generatedPassword;
 }
 
-console.log(generatePassword(10));
-console.log(generatePassword(5));
-console.log(generatePassword(23005));
+console.log(generatePassword(8));
