@@ -51,7 +51,6 @@ function generatePassword() {
 function copyPassword() {
     var copyText = document.getElementById("generated-password");
     copyText.select();
-    copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
+    alert("Your password " + copyText.value + " was copied to the clipboard");
 }
