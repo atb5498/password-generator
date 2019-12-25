@@ -45,11 +45,11 @@ function generatePassword() {
         generatedPassword += charSet.charAt(characterIndex);
     }
 
-    document.getElementById("password").textContent = generatedPassword;
+    document.getElementById("generated-password").textContent = generatedPassword;
 }
 
 function copyPassword() {
-    var copyText = document.getElementById("password");
+    var copyText = document.getElementById("generated-password");
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");

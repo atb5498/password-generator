@@ -11,58 +11,56 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>PASSWORD GENERATOR</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-            </div>
-
-            <div class="col-md-4">
-                <div id="password">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="password">PASSWORD</h1>
+                    <h1 id="generator">GENERATOR</h1>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <div class="col-md-4">
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+
+                <div class="col-md-4">
+                    <div id="generated-password">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
 
-            <div class="col-md-2">
-            </div>
+                <div class="col-md-2">
+                    <button onclick="generatePassword()">START</button>
+                </div>
 
-            <div class="col-md-2">
-                <button onclick="generatePassword()">Generate</button>
-            </div>
+                <div class="col-md-2">
+                    <button onclick="copyPassword()">COPY</button>
+                </div>
 
-            <div class="col-md-2">
-                <button onclick="copyPassword()">Copy</button>
-            </div>
-
-            <div class="col-md-2">
-            </div>
-
-            <div class="col-md-2">
+                <div class="col-md-4">
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
