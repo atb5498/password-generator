@@ -1,5 +1,10 @@
 function generatePassword() {
     var passwordLength = parseInt(prompt("Enter a character length between 8 and 128"));
+    var useLowercase = confirm("Would you like to include lowercase letters?");
+    var useUppercase = confirm("Would you like to include uppercase letters?");
+    var useNumbers = confirm("Would you like to include numbers?");
+    var useSpecialCharacters = confirm("Would you like to include special characters?");
+    var charSet = "";
 
     if (passwordLength < 8) {
         alert("Password length must be greater than or equal to 8 characters");
@@ -12,15 +17,9 @@ function generatePassword() {
     }
 
     if (useLowercase === false && useUppercase === false && useNumbers === false && useSpecialCharacters === false) {
-        alert("Password must include atleast one character type")
+        alert("Password must include atleast one character type");
         return;
     }
-
-    var useLowercase = confirm("Would you like to include lowercase letters?");
-    var useUppercase = confirm("Would you like to include uppercase letters?");
-    var useNumbers = confirm("Would you like to include numbers?");
-    var useSpecialCharacters = confirm("Would you like to include special characters?");
-    var charSet = "";
 
     if (useLowercase) {
         charSet += "abcdefghijklmnopqrstuvwxyz";
