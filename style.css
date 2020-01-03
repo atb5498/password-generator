@@ -15,7 +15,6 @@ body {
     color: white;
     text-align: center;
     font-size: 25px;
-    margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 5px;
 }
@@ -54,7 +53,7 @@ button:hover {
 button:active {
     background-color: #F44E3F;
     color: white;
-  }
+}
 
 button:focus {
     outline: none;
