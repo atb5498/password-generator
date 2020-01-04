@@ -5,12 +5,12 @@ This project is intended to produce a random password generator based on user-se
 # Getting Started
 
 1. Click the START button
-2. The user is prompted to enter a character length between 8 and 128
-3. The user is asked to confirm whether to include lowercase letters?
-4. The user is asked to confirm whether to include uppercase letters?
-5. The user is asked to confirm whether to include numbers?
-6. The user is asked to confirm whether to include special characters?
-7. Randomly generated password is displyed 
+2. User is prompted to enter a character length between 8 and 128
+3. User is asked to confirm whether to include lowercase letters?
+4. User is asked to confirm whether to include uppercase letters?
+5. User is asked to confirm whether to include numbers?
+6. User is asked to confirm whether to include special characters?
+7. Randomly generated password is displayed
 
 # Built With
 
