@@ -18,6 +18,6 @@ Bootstrap - https://getbootstrap.com/
 
 # Link
 
-https://atb5498.github.io/homework3/
+https://atb5498.github.io/password-generator/
 
 ![alt text](screen.png "Logo Title Text 1")
