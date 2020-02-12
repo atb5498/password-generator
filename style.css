@@ -2,7 +2,7 @@ body {
     background-color: #090809;
 }
 
-#password  {
+#password {
     color: white;
     text-align: center;
     font-size: 25px;
@@ -11,7 +11,7 @@ body {
     letter-spacing: 5px;
 }
 
-#generator  {
+#generator {
     color: white;
     text-align: center;
     font-size: 25px;
@@ -35,6 +35,10 @@ body {
     text-align: center;
 }
 
+#generated-password:focus {
+    outline: none;
+}
+
 button {
     font-family: 'Montserrat', sans-serif;
     color: #090809;
@@ -50,11 +54,11 @@ button:hover {
     background-color: #F4998D;
 }
 
+button:focus {
+    outline: none;
+}
+
 button:active {
     background-color: #F44E3F;
     color: white;
-}
-
-button:focus {
-    outline: none;
 }
